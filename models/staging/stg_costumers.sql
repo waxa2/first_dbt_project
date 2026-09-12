@@ -1,1 +1,1 @@
-SELECT * FROM {{source('staging', 'costumers') }}
+SELECT * FROM {{source('staging', 'customers') }}
