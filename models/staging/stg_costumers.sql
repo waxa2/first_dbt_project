@@ -1,2 +1,1 @@
-SELECT *
-FROM {{ ref('staging', 'costumers') }}
+SELECT * FROM {{source('staging', 'costumers') }}
