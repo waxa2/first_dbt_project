@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    description: This source contains the raw data from the external system.
+    tables:
+      - name: costumers
+        description: This table contains the costumers data.
+      - name: orders
+        description: This table contains the orders data.
