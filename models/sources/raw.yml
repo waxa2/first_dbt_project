@@ -17,6 +17,9 @@ sources:
             tests:
               - not_null
           - name: loaded_at
+            description: The timestamp when the record was loaded into the database.
+            tests:
+              - not_null
 
 
         loaded_at_field: loaded_at
