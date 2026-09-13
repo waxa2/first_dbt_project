@@ -16,6 +16,7 @@ sources:
             description: The first name of the customer.
             tests:
               - not_null
+          - name: loaded_at
 
 
         loaded_at_field: loaded_at
