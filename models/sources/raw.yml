@@ -35,3 +35,7 @@ sources:
             tests:
             - not_null
             - positive_total_amount
+          - name: loaded_at
+            description: The timestamp when the record was loaded into the database.
+            tests:
+              - not_null
