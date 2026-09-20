@@ -1,5 +1,4 @@
 
-{{config (materialized='table') }}
 
 WITH source_data AS (
 	SELECT customer_id,
