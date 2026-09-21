@@ -1,3 +1,5 @@
+
+{{config(materialized='incremental')}}
 with customers as (
 select
 	customer_id,
@@ -26,3 +28,7 @@ o.order_date,
 o.total_amount
 from orders as o
 left join customers as c on o.customer_id = c.customer_id
+
+{%- if is_incremental() -%}
+	where o.order_date > (select max(order_date) from {{ this }})
+{%- endif -%}
