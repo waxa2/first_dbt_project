@@ -43,8 +43,9 @@ sources:
             description: The status of the order (e.g., 'completed', 'pending', 'canceled').
             tests:
               - accepted_values:
-                  values:
-                  - 'delivered'
-                  - 'pending'
-                  - 'canceled'
-                  - 'shipped'
+                  arguments:
+                    values:
+                      - 'delivered'
+                      - 'pending'
+                      - 'canceled'
+                      - 'shipped'

@@ -22,3 +22,13 @@ models:
         tests:
           - not_null
           - positive_total_amount
+      - name: order_status
+        description: The status of the order (e.g., 'completed', 'pending', 'canceled').
+        tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - 'delivered'
+                  - 'pending'
+                  - 'canceled'
+                  - 'shipped'
