@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "This model transforms the raw customers data into a structured format."
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: "First name of the customer"
+        tests:
+          - not_null
+      - name: last_name
+        description: "Last name of the customer"
+        tests:
+          - not_null
+      - name: email
+        description: "Email address of the customer"
+        tests:
+          - not_null
+          - unique
