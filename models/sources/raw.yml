@@ -39,3 +39,12 @@ sources:
             description: The timestamp when the record was loaded into the database.
             tests:
               - not_null
+          - name: order_status
+            description: The status of the order (e.g., 'completed', 'pending', 'canceled').
+            tests:
+              - accepted_values:
+                  values:
+                  - 'delivered'
+                  - 'pending'
+                  - 'canceled'
+                  - 'shipped'
